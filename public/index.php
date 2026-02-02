@@ -28,12 +28,10 @@ $method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
 try {
     $router->route($uri, $method);
 } catch (ValidationException $exception) {
-    dd($_SERVER);
     Session::flash('errors', $exception->errors);
     Session::flash('old', $exception->old);
 
-    return redirect($_SERVER['HTTP_REFERER']);
+    return redirect($router->previousUrl());
 }
-
 
 Session::unflash();
