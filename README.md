@@ -73,8 +73,8 @@ Instead of treating Laravel as a black box, you build the core concepts yourself
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/oaivyftu/LaravelFromScratch.git
-cd LaravelFromScratch
+git clone [https://github.com/oaivyftu/LaravelFromScratch.git](https://github.com/oaivyftu/mini-laravel.git)
+cd min-laravel
 composer install
 ```
 
